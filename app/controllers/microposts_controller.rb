@@ -71,4 +71,8 @@ class MicropostsController < ApplicationController
     def micropost_params
       params.require(:micropost).permit(:content, :user_id)
     end
+
+  def test
+    # @user=Example_user.new();
+  end
 end
