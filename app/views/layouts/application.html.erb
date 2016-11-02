@@ -11,35 +11,18 @@
   <!-- [endif]-->
 </head>
 <body>
-TITLE:<%=full_title(yield(:title))%>
 
-<header class="navbar navbar-fixed-top navbar-inverse">
-
-  <div class="navbar-inner">
-    <div class="container">
-
-      <%= link_to "Sample app",'#',id:"logo" %>
-      <nav>
-
-        <ul class="nav pull-right">
-          <li><%=link_to "Home",'#' %></li>
-          <li><%=link_to "Help",'#' %></li>
-          <li><%=link_to "Sign in",'#' %></li>
-
-        </ul>
-      </nav>
-
-
-
-    </div>
-  </div>
-</header>
+<%=render 'layouts/header'%>
 
 <!-- 此处插入其他页面内容-->
 <div class="container">
     <%= yield %>
+
+  <%=render 'layouts/footer'%>
 </div>
 <!-- -->
+
+
 
 </body>
 </html>
